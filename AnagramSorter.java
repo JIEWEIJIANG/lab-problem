@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class AnagramSorterTest {
+public class AnagramSorter {
 
     public static void main(String[] args) {
         // Test case 1
