@@ -2,7 +2,7 @@
 *
 * @author Jiewei Jiang
 */
-public class NewClass {
+public class getLarge {
 
   public static int getLarget(int arr[], int sz) {
     int iterate1 = 0;
