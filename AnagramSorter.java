@@ -4,10 +4,20 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class AnagramSorter {
+public class AnagramSorterTest {
 
     public static void main(String[] args) {
-        String[] strings = {"Apple", "Button", "Cherry", "Dot", "Easy", "Fog", "Gross", "Hall"};
+        // Test case 1
+        String[] strings1 = {"dog", "god", "cat", "act"};
+        testAnagramSorter(strings1);
+
+        // Test case 2
+        String[] strings2 = {"abc", "cab", "bca", "def", "fed", "xyz", "zyx"};
+        testAnagramSorter(strings2);
+    }
+
+    private static void testAnagramSorter(String[] strings) {
+        System.out.println("Input strings: " + Arrays.toString(strings));
 
         Map<String, List<String>> anagramGroups = new HashMap<>();
 
@@ -26,5 +36,6 @@ public class AnagramSorter {
                 System.out.println("Anagrams: " + anagrams);
             }
         }
+        System.out.println();
     }
 }
